@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 st.set_page_config(page_title="News Sentiment Dashboard", layout="wide")
-st.title("📊 Real-Time News Sentiment Dashboard")
+st.title("Abhiram's Real-Time News Sentiment Dashboard")
 
 # Load predictions.csv from local repo
 if os.path.exists("predictions.csv"):
@@ -18,3 +18,4 @@ if not df.empty:
 
     st.subheader("Recent Headlines")
     st.dataframe(df[["publishedAt", "source", "text", "sentiment", "prob_pos", "url"]].head(20))
+
