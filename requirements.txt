@@ -1,0 +1,7 @@
+streamlit
+pandas
+pyspark
+requests
+nltk
+vaderSentiment
+pyarrow
